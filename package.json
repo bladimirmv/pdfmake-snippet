@@ -3,6 +3,12 @@
     "displayName": "pdfmake snippet",
     "description": "A simple snippet for pdfmake",
     "version": "0.0.1",
+    "publisher": "Bladimir Medrano Vargas",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bladimirmv/pdfmake-snippet"
+    },
+    "icon": "pdfmake.jpg",
     "engines": {
         "vscode": "^1.52.0"
     },
