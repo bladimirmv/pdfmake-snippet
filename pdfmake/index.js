@@ -1,0 +1,29 @@
+var btn = document.querySelector('#open');
+
+
+btn.addEventListener('click', () => {
+
+	var docDefinition = {
+		info: {
+			title: 'Title',
+			author: 'Your name'
+		},
+		pageMargins: [60, 40, 40, 70],
+		pageSize: 'letter',
+		content: [
+			{
+				text: 'example'
+			}
+		],
+		footer: (currentPage, pageCount) => {
+			return {
+				fontSize: 10,
+				text: `${currentPage} de ${pageCount}`,
+				alignment: 'center',
+				margin: [0, 20, 0, 0]
+			};
+		}
+	}
+
+	createPdf(docDefinition).open();
+});
